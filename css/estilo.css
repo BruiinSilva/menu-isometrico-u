@@ -1,48 +1,48 @@
-@import url('https://fonts.gstatic.com/s/oswald/v48/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUJiZTaR.woff2');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 
 * {
-    margin: 5;
-    padding: 5;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
 
 body {
-    display: table;
-    justify-content: center;
+    display: flex;
+    justify-content: left;
     align-items: center;
-    min-height: 200vh;
-    margin-left: 200px;
+    min-height: 100vh;
+    margin-left: 100px;
 }
 
 ul {
     position: relative;
-    transform: skewy(0deg,);
+    transform: skewy(-15deg);
 }
 
 ul li {
     position: relative;
     list-style: none;
     width: 200px;
-    background: #050505;
+    background: #3e3f46;
     padding: 15px;
     z-index: var(--i);
     transition: 0.5s;
 }
 
 ul li:hover {
-    background: #ee338a;
-    transform:  translatex(100px);
+    background: #33a3ee;
+    transform:  translatex(50px);
 }
 
 ul li::before {
     content: '';
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -40px;
     width: 40px;
     height: 100%;
-    background: #e0e6dd;
+    background: #2e3133;
     transform-origin: right;
     transform: skewy(45deg);
     transition:  0.5s;
@@ -50,7 +50,6 @@ ul li::before {
 
 ul li:hover::before {
     background: #1f5376;
-
 }
 
 ul li::after {
@@ -66,14 +65,14 @@ ul li::after {
     transition:  0.5s;
 }
 
-ul li:hover::before /*after*/{
-    background: #2d00f7;
+ul li:hover::after{
+    background: #2982b9;
 }
 
 ul li a {
     text-decoration: none;
-    color: rgb(250, 2, 2);
-    display: felx/*block*/;
+    color: #999;
+    display: block;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: 0.5s;
@@ -84,7 +83,7 @@ ul li:hover a {
 }
 
 ul li:last-child:after {
-    box-shadow: -120px 120px 20px rgb(45, 223, 9);
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* FIM DO CÓDIGO FONTE*/
